@@ -2,7 +2,281 @@
 # yarn lockfile v1
 
 
+"@pixi/accessibility@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2faccessibility/-/accessibility-6.1.2.tgz#c6845bcfc3ce274bc2ae04bd2ecd02cfa54954fd"
+  integrity sha1-xoRbz8POJ0vCrgS9Ls0Cz6VJVP0=
+
+"@pixi/app@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2fapp/-/app-6.1.2.tgz#00fd5720f918e48d2cce9ea690ebeed146204497"
+  integrity sha1-AP1XIPkY5I0szp6mkOvu0UYgRJc=
+
+"@pixi/compressed-textures@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2fcompressed-textures/-/compressed-textures-6.1.2.tgz#efc2de485cc495f22fd97b9b5963de298aa4cb8f"
+  integrity sha1-78LeSFzElfIv2XubWWPeKYqky48=
+
+"@pixi/constants@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2fconstants/-/constants-6.1.2.tgz#efc12bfcb75aec18c4920d2c0b2fa513d34cc777"
+  integrity sha1-78Er/Lda7BjEkg0sCy+lE9NMx3c=
+
+"@pixi/core@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2fcore/-/core-6.1.2.tgz#81b151654f5c072feb59052325edaab39329ab96"
+  integrity sha1-gbFRZU9cBy/rWQUjJe2qs5Mpq5Y=
+
+"@pixi/display@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2fdisplay/-/display-6.1.2.tgz#4fc7d407723d3c496f069e3f5de7de83ca712cfe"
+  integrity sha1-T8fUB3I9PElvBp4/Xefeg8pxLP4=
+
+"@pixi/extract@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2fextract/-/extract-6.1.2.tgz#bd625bb09f95dc536cdaa5abec238934d9cf9c7a"
+  integrity sha1-vWJbsJ+V3FNs2qWr7COJNNnPnHo=
+
+"@pixi/filter-alpha@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2ffilter-alpha/-/filter-alpha-6.1.2.tgz#4f57bb9a536f3be167211a61941353bfcaaa0cb7"
+  integrity sha1-T1e7mlNvO+FnIRphlBNTv8qqDLc=
+
+"@pixi/filter-blur@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2ffilter-blur/-/filter-blur-6.1.2.tgz#8962fb48596ebab54bc3a7c1179ad7b256581e4c"
+  integrity sha1-iWL7SFluurVLw6fBF5rXslZYHkw=
+
+"@pixi/filter-color-matrix@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2ffilter-color-matrix/-/filter-color-matrix-6.1.2.tgz#fa0685536524b2da437aa65abca1eaa5ef20ff5d"
+  integrity sha1-+gaFU2UkstpDeqZavKHqpe8g/10=
+
+"@pixi/filter-displacement@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2ffilter-displacement/-/filter-displacement-6.1.2.tgz#549dfaede27e15674a12533ef12fef9292f5c93a"
+  integrity sha1-VJ367eJ+FWdKElM+8S/vkpL1yTo=
+
+"@pixi/filter-fxaa@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2ffilter-fxaa/-/filter-fxaa-6.1.2.tgz#ec077b632967bbc00ee1dc481eeba6640b55294b"
+  integrity sha1-7Ad7Yylnu8AO4dxIHuumZAtVKUs=
+
+"@pixi/filter-noise@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2ffilter-noise/-/filter-noise-6.1.2.tgz#fc4a409ffd153929540767c4676c169f07d7f7b7"
+  integrity sha1-/EpAn/0VOSlUB2fEZ2wWnwfX97c=
+
+"@pixi/graphics@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2fgraphics/-/graphics-6.1.2.tgz#f065b5fe06ae6bd8db036630f607c9f9422254a8"
+  integrity sha1-8GW1/gaua9jbA2Yw9gfJ+UIiVKg=
+
+"@pixi/interaction@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2finteraction/-/interaction-6.1.2.tgz#5c560b61dcb683f169386d58ec8267607a42baad"
+  integrity sha1-XFYLYdy2g/FpOG1Y7IJnYHpCuq0=
+
+"@pixi/loaders@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2floaders/-/loaders-6.1.2.tgz#ac57deb487536f2b31a961a26b2e2d036f720c3b"
+  integrity sha1-rFfetIdTbysxqWGiay4tA29yDDs=
+
+"@pixi/math@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2fmath/-/math-6.1.2.tgz#1049ff0f3bb8061b82c10041b26e03db25d7d4cc"
+  integrity sha1-EEn/Dzu4BhuCwQBBsm4D2yXX1Mw=
+
+"@pixi/mesh-extras@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2fmesh-extras/-/mesh-extras-6.1.2.tgz#c3a88a3d9fd325d839aded1443cf3199254e4bd3"
+  integrity sha1-w6iKPZ/TJdg5re0UQ88xmSVOS9M=
+
+"@pixi/mesh@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2fmesh/-/mesh-6.1.2.tgz#61e24abda5706dfae417c4d0e3d8cdb16e8ca332"
+  integrity sha1-YeJKvaVwbfrkF8TQ49jNsW6MozI=
+
+"@pixi/mixin-cache-as-bitmap@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2fmixin-cache-as-bitmap/-/mixin-cache-as-bitmap-6.1.2.tgz#591191a9b1a9880b5ae6888c8c41bb31f361e711"
+  integrity sha1-WRGRqbGpiAta5oiMjEG7MfNh5xE=
+
+"@pixi/mixin-get-child-by-name@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2fmixin-get-child-by-name/-/mixin-get-child-by-name-6.1.2.tgz#f5d03c1a0361d259485b6964b3873b57141e3a43"
+  integrity sha1-9dA8GgNh0llIW2lks4c7VxQeOkM=
+
+"@pixi/mixin-get-global-position@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2fmixin-get-global-position/-/mixin-get-global-position-6.1.2.tgz#9c9affdc7589f48fb51d9045e3fc5c0584b99d95"
+  integrity sha1-nJr/3HWJ9I+1HZBF4/xcBYS5nZU=
+
+"@pixi/particle-container@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2fparticle-container/-/particle-container-6.1.2.tgz#92c8b1981ad6eae4ce5a8e6e6140c866624a2607"
+  integrity sha1-ksixmBrW6uTOWo5uYUDIZmJKJgc=
+
+"@pixi/polyfill@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2fpolyfill/-/polyfill-6.1.2.tgz#a5f62a8a79b4e5368afc99dcff7ede1b338e152d"
+  integrity sha1-pfYqinm05TaK/Jnc/37eGzOOFS0=
+  dependencies:
+    object-assign "^4.1.1"
+    promise-polyfill "^8.2.0"
+
+"@pixi/prepare@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2fprepare/-/prepare-6.1.2.tgz#c7e40a6043734011f26364a50846ef77a24434e1"
+  integrity sha1-x+QKYENzQBHyY2SlCEbvd6JENOE=
+
+"@pixi/runner@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2frunner/-/runner-6.1.2.tgz#38e25a761ca9bab1d67e59449c7ae92656b1fa51"
+  integrity sha1-OOJadhypurHWfllEnHrpJlax+lE=
+
+"@pixi/settings@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2fsettings/-/settings-6.1.2.tgz#8c2086995616190c5b4e8902a7077b1d10d41931"
+  integrity sha1-jCCGmVYWGQxbTokCpwd7HRDUGTE=
+  dependencies:
+    ismobilejs "^1.1.0"
+
+"@pixi/sprite-animated@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2fsprite-animated/-/sprite-animated-6.1.2.tgz#4995eb61c440ffb07ac430c8a70282020b08e0df"
+  integrity sha1-SZXrYcRA/7B6xDDIpwKCAgsI4N8=
+
+"@pixi/sprite-tiling@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2fsprite-tiling/-/sprite-tiling-6.1.2.tgz#730732fb3dd2cfd66c55b5c3e9ca9651b75d877d"
+  integrity sha1-cwcy+z3Sz9ZsVbXD6cqWUbddh30=
+
+"@pixi/sprite@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2fsprite/-/sprite-6.1.2.tgz#97ad5cd0821e1ee858d5cf2a23cde1a18a8646c3"
+  integrity sha1-l61c0IIeHuhY1c8qI83hoYqGRsM=
+
+"@pixi/spritesheet@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2fspritesheet/-/spritesheet-6.1.2.tgz#62ad46ab04cf8967410feb6f64652363e16f80ff"
+  integrity sha1-Yq1GqwTPiWdBD+tvZGUjY+FvgP8=
+
+"@pixi/text-bitmap@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2ftext-bitmap/-/text-bitmap-6.1.2.tgz#5053acde4b7a48acddc4d6a29ccbe783d80113e1"
+  integrity sha1-UFOs3kt6SKzdxNainMvng9gBE+E=
+
+"@pixi/text@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2ftext/-/text-6.1.2.tgz#b8ffd698dc012c284e552f7839c68d1166ba5826"
+  integrity sha1-uP/WmNwBLChOVS94OcaNEWa6WCY=
+
+"@pixi/ticker@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2fticker/-/ticker-6.1.2.tgz#c74b221111b09070244cbea35330aaf208f93f52"
+  integrity sha1-x0siERGwkHAkTL6jUzCq8gj5P1I=
+
+"@pixi/utils@6.1.2":
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/@pixi%2futils/-/utils-6.1.2.tgz#066b6ae03ed263f57891e8f8d63b1081c06dd9a1"
+  integrity sha1-Bmtq4D7SY/V4kej41jsQgcBt2aE=
+  dependencies:
+    "@types/earcut" "^2.1.0"
+    earcut "^2.2.2"
+    eventemitter3 "^3.1.0"
+    url "^0.11.0"
+
+"@types/earcut@^2.1.0":
+  version "2.1.1"
+  resolved "http://npm.dui88.com:80/@types%2fearcut/-/earcut-2.1.1.tgz#573a0af609f17005c751f6f4ffec49cfe358ea51"
+  integrity sha1-VzoK9gnxcAXHUfb0/+xJz+NY6lE=
+
+earcut@^2.2.2:
+  version "2.2.3"
+  resolved "http://npm.dui88.com:80/earcut/-/earcut-2.2.3.tgz#d44ced2ff5a18859568e327dd9c7d46b16f55cf4"
+  integrity sha1-1EztL/WhiFlWjjJ92cfUaxb1XPQ=
+
+eventemitter3@^3.1.0:
+  version "3.1.2"
+  resolved "http://npm.dui88.com:80/eventemitter3/-/eventemitter3-3.1.2.tgz#2d3d48f9c346698fce83a85d7d664e98535df6e7"
+  integrity sha1-LT1I+cNGaY/Og6hdfWZOmFNd9uc=
+
+ismobilejs@^1.1.0:
+  version "1.1.1"
+  resolved "http://npm.dui88.com:80/ismobilejs/-/ismobilejs-1.1.1.tgz#c56ca0ae8e52b24ca0f22ba5ef3215a2ddbbaa0e"
+  integrity sha1-xWygro5Sskyg8iul7zIVot27qg4=
+
+object-assign@^4.1.1:
+  version "4.1.1"
+  resolved "http://npm.dui88.com:80/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
+  integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
+
+pixi.js@^6.1.2:
+  version "6.1.2"
+  resolved "http://npm.dui88.com:80/pixi.js/-/pixi.js-6.1.2.tgz#f66521eb324baeed714e21dd2fa751bf5a362e72"
+  integrity sha1-9mUh6zJLru1xTiHdL6dRv1o2LnI=
+  dependencies:
+    "@pixi/accessibility" "6.1.2"
+    "@pixi/app" "6.1.2"
+    "@pixi/compressed-textures" "6.1.2"
+    "@pixi/constants" "6.1.2"
+    "@pixi/core" "6.1.2"
+    "@pixi/display" "6.1.2"
+    "@pixi/extract" "6.1.2"
+    "@pixi/filter-alpha" "6.1.2"
+    "@pixi/filter-blur" "6.1.2"
+    "@pixi/filter-color-matrix" "6.1.2"
+    "@pixi/filter-displacement" "6.1.2"
+    "@pixi/filter-fxaa" "6.1.2"
+    "@pixi/filter-noise" "6.1.2"
+    "@pixi/graphics" "6.1.2"
+    "@pixi/interaction" "6.1.2"
+    "@pixi/loaders" "6.1.2"
+    "@pixi/math" "6.1.2"
+    "@pixi/mesh" "6.1.2"
+    "@pixi/mesh-extras" "6.1.2"
+    "@pixi/mixin-cache-as-bitmap" "6.1.2"
+    "@pixi/mixin-get-child-by-name" "6.1.2"
+    "@pixi/mixin-get-global-position" "6.1.2"
+    "@pixi/particle-container" "6.1.2"
+    "@pixi/polyfill" "6.1.2"
+    "@pixi/prepare" "6.1.2"
+    "@pixi/runner" "6.1.2"
+    "@pixi/settings" "6.1.2"
+    "@pixi/sprite" "6.1.2"
+    "@pixi/sprite-animated" "6.1.2"
+    "@pixi/sprite-tiling" "6.1.2"
+    "@pixi/spritesheet" "6.1.2"
+    "@pixi/text" "6.1.2"
+    "@pixi/text-bitmap" "6.1.2"
+    "@pixi/ticker" "6.1.2"
+    "@pixi/utils" "6.1.2"
+
+promise-polyfill@^8.2.0:
+  version "8.2.0"
+  resolved "http://npm.dui88.com:80/promise-polyfill/-/promise-polyfill-8.2.0.tgz#367394726da7561457aba2133c9ceefbd6267da0"
+  integrity sha1-NnOUcm2nVhRXq6ITPJzu+9YmfaA=
+
+punycode@1.3.2:
+  version "1.3.2"
+  resolved "http://npm.dui88.com:80/punycode/-/punycode-1.3.2.tgz#9653a036fb7c1ee42342f2325cceefea3926c48d"
+  integrity sha1-llOgNvt8HuQjQvIyXM7v6jkmxI0=
+
+querystring@0.2.0:
+  version "0.2.0"
+  resolved "http://npm.dui88.com:80/querystring/-/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
+  integrity sha1-sgmEkgO7Jd+CDadW50cAWHhSFiA=
+
 typescript@^4.3.5:
   version "4.3.5"
   resolved "http://npm.dui88.com:80/typescript/-/typescript-4.3.5.tgz#4d1c37cc16e893973c45a06886b7113234f119f4"
   integrity sha1-TRw3zBbok5c8RaBohrcRMjTxGfQ=
+
+url@^0.11.0:
+  version "0.11.0"
+  resolved "http://npm.dui88.com:80/url/-/url-0.11.0.tgz#3838e97cfc60521eb73c525a8e55bfdd9e2e28f1"
+  integrity sha1-ODjpfPxgUh63PFJajlW/3Z4uKPE=
+  dependencies:
+    punycode "1.3.2"
+    querystring "0.2.0"
