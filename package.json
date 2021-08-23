@@ -1,8 +1,15 @@
 {
   "name": "@tuia/pixijs-engine",
-  "version": "1.0.0",
-  "description": "A engine for pixijs game",
+  "version": "0.0.1",
+  "description": "基于Pixi封装的游戏引擎",
   "main": "lib/main.js",
+  "keywords": [
+    "pixijs",
+    "engine"
+  ],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
