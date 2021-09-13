@@ -1,13 +1,14 @@
 /**
- * 资源预加载器
- * 利用pixi的loader(加载器)对象，可以用来加载任何类型的图像
+ * 资源预加载器-利用pixi的loader(加载器)对象，可以用来加载任何类型的图像
+ * @param {Array} resource 资源对象列表
+ * @return {Promise} 返回一个资源预加载完成的Promise对象
  */
 
 import { Loader } from "pixi.js"
 
 export const LoaderShared = Loader.shared
 
-export default function (resource: Array<string[]>) {
+export default function (resource: Array<any[]>) {
   if (!Array.isArray(resource)) {
     console.error(`请传入一个资源列表`)
     return
