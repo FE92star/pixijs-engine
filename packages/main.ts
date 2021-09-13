@@ -1,1 +1,2 @@
-export const PIXI_VERSION = '1.0.1'
+export { default as Preloader } from './core/Preloader'
+

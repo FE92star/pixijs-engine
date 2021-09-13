@@ -192,6 +192,11 @@
   resolved "http://npm.dui88.com:80/@types%2fearcut/-/earcut-2.1.1.tgz#573a0af609f17005c751f6f4ffec49cfe358ea51"
   integrity sha1-VzoK9gnxcAXHUfb0/+xJz+NY6lE=
 
+"@types/node@^16.9.1":
+  version "16.9.1"
+  resolved "http://npm.dui88.com:80/@types%2fnode/-/node-16.9.1.tgz#0611b37db4246c937feef529ddcc018cf8e35708"
+  integrity sha1-BhGzfbQkbJN/7vUp3cwBjPjjVwg=
+
 colorette@^1.2.2:
   version "1.4.0"
   resolved "http://npm.dui88.com:80/colorette/-/colorette-1.4.0.tgz#5190fbb87276259a86ad700bff2c6d6faa3fca40"
