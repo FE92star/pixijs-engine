@@ -7,8 +7,8 @@ const paths = readdirSync('./packages')
 for (const path of paths) {
   if (statSync(resolve('./packages', path)).isDirectory()) {
     alias.push({
-      find: `@eva/${path}`,
-      replacement: resolve(__dirname, `../packages/${path}/lib`)
+      find: `@engine/${path}`,
+      replacement: resolve(__dirname, `../packages/${path}`)
     })
   }
 }

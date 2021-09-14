@@ -4,12 +4,21 @@
     "rootDir": "../",
     "target": "es6",
     "paths": {
-      "@eva/eva.js":[
-        "./packages/eva.js/lib"
-      ], 
-      "@eva/*": [
-        "./packages/*/lib"
-      ]
+      "@engine/adapter": [
+        "./packages/adapter"
+      ],
+      "@engine/core": [
+        "./packages/core"
+      ],
+      "@engine/resources": [
+        "./packages/resources"
+      ],
+      "@engine/collision": [
+        "./packages/collision"
+      ],
+      "@engine/events": [
+        "./packages/events"
+      ],
     }
   },
   "include": [
