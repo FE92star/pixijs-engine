@@ -8,6 +8,7 @@
  * @param {Boolean} loop-动画是否循环播放
  * @param {Function} onComplete-动画播放结束回调(loop为false才会触发)
  */
+
 import { AnimatedSprite, TextureCache, Rectangle, Texture } from '../adapter'
 
 type voidFn = () => void

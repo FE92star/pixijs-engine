@@ -2,6 +2,7 @@
  * PIXI使用webgl在gpu上渲染图像，图像需要转换为gpu可以处理的东西，这个东西就是texture(纹理)。为了保证快速高效，pixi使用texture cache（纹理缓存）来存储和引用你的精灵需要的所有纹理。
  * texture（纹理）的名称就是引用图像的文件的路径。通过loader加载器加载图像资源，所有加载完成的图像纹理都统一被存储到纹理缓存中
  */
+
 import { Sprite, TextureCache } from '../adapter'
 
 export default function (
