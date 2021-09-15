@@ -28,3 +28,5 @@ export const AnimatedSprite = pixi.AnimatedSprite
 export const SimpleRope = pixi.SimpleRope
 /** 点对象 */
 export const Point = pixi.Point
+
+export const Resource = pixi.Resource

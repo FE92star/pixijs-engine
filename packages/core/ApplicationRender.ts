@@ -39,8 +39,6 @@ export default class extends Application {
       height: 1334,
       resolution: 1, // 渲染容器的分辨率
       antialias: true, // 开启抗锯齿
-      backgroundAlpha: 0, // 设置透明渲染背景
-      transparent: true
     }, options)
     this.options = options
 
@@ -86,5 +84,9 @@ export default class extends Application {
       aspectRatio,
       scaleRatio
     }
+    // 显示对象实例添加可视数据属性
+    Object.defineProperty(PIXI.DisplayObject.prototype, 'realScreen', {
+      value: this.realScreen
+    })
   }
 }
