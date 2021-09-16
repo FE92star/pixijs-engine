@@ -4,26 +4,12 @@
     "rootDir": "../",
     "target": "es6",
     "paths": {
-      "@engine/adapter": [
-        "./packages/adapter"
-      ],
-      "@engine/core": [
-        "./packages/core"
-      ],
-      "@engine/resources": [
-        "./packages/resources"
-      ],
-      "@engine/collision": [
-        "./packages/collision"
-      ],
-      "@engine/events": [
-        "./packages/events"
-      ],
+      "@engine": [
+        "./src"
+      ]
     }
   },
   "include": [
-    "../packages/global.d.ts",
-    "../packages/*/lib",
     "./"
   ]
 }

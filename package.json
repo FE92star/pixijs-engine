@@ -25,6 +25,7 @@
     "vite": "^2.5.6"
   },
   "dependencies": {
+    "eventemitter3": "^4.0.7",
     "pixi.js": "^6.1.2"
   }
 }

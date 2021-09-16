@@ -1,7 +1,5 @@
-import { Preloader } from '@engine/resources'
-import { ApplicationRender, CreateSprite, CreateMovieClip } from '@engine/core'
-import { Graphics, Container } from '@engine/adapter'
-import { hitCircleRect } from '@engine/collision'
+import { Preloader, CreateSprite, ApplicationRender, CreateMovieClip, EventManager, hitCircleRect } from '@engine'
+import * as PIXI from 'pixi.js'
 
 let count = 0
 
@@ -17,6 +15,10 @@ export function init() {
     transparent: true
   })
 
+  // 用于hack移动端真机上地图不能滚动的bug
+  app.renderer.plugins.interaction.autoPreventDefault = false
+  app.renderer.view.style.touchAction = 'auto'
+
   app.resize()
   app.stage.sortableChildren = true
 
@@ -25,7 +27,7 @@ export function init() {
     ['car2', '//yun.tuisnake.com/h5-mami/worldTrip/1.0/gamearea/people/car2.png', loadCount],
     ['fire', '//yun.tuisnake.com/h5-mami/worldTrip/1.0/building/blue_fireworks.png', loadCount]
   ]).then(() => {
-    const container = new Container()
+    const container = new PIXI.Container()
     container.position.set(300, 350)
     // 设置容器内部子元素进行zIndex重排
     container.sortableChildren = true
@@ -35,7 +37,7 @@ export function init() {
     sprite1.zIndex = 10
 
     const sprite2 = CreateSprite('car2')
-    sprite2.zIndex = 9
+    sprite2.zIndex = 11
 
     container.addChild(sprite1)
     container.addChild(sprite2)
@@ -65,10 +67,20 @@ export function init() {
     animateSprite.zIndex = 1
     animateSprite.play()
 
-    let circle = new Graphics()
+    let circle = new PIXI.Graphics()
     circle.beginFill(0x9966FF)
-    circle.drawCircle(80, 130, 32)
+    circle.drawCircle(80, 1000, 32)
     circle.endFill()
+
+    // circle添加点击事件
+    circle.interactive = true
+    // circle.on('tap', () => {
+    //   console.log('圆形被点击了')
+    // })
+    circle.on(EventManager.ALL_CLICK, () => {
+      alert('圆形被点击了')
+    })
+
     app.stage.addChild(circle)
 
     // 检测圆形和矩形精灵是否发生碰撞
@@ -78,9 +90,9 @@ export function init() {
     app.stage.addChild(container)
     app.stage.addChild(animateSprite)
 
-    app.ticker.add((delta) => {
-      container.rotation -= 0.1 * delta
-    })
+    // app.ticker.add((delta) => {
+    //   container.rotation -= 0.1 * delta
+    // })
   }).catch(() => {
     console.error('预加载失败, 请检查原因')
   })

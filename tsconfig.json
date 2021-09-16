@@ -29,14 +29,10 @@
       "node"
     ],
     "paths": {
-      "@/core": [
-        "packages/core/lib"
+      "@engine": [
+        "src/index.ts"
       ]
     }
   },
-  "include": [
-    "packages/global.d.ts",
-    "packages/*/lib",
-    "packages/*/__tests__"
-  ]
+  "include": []
 }

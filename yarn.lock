@@ -217,6 +217,11 @@ eventemitter3@^3.1.0:
   resolved "http://npm.dui88.com:80/eventemitter3/-/eventemitter3-3.1.2.tgz#2d3d48f9c346698fce83a85d7d664e98535df6e7"
   integrity sha1-LT1I+cNGaY/Og6hdfWZOmFNd9uc=
 
+eventemitter3@^4.0.7:
+  version "4.0.7"
+  resolved "http://npm.dui88.com:80/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
+  integrity sha1-Lem2j2Uo1WRO9cWVJqG0oHMGFp8=
+
 fsevents@~2.3.2:
   version "2.3.2"
   resolved "http://npm.dui88.com:80/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
