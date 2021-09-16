@@ -1,6 +1,6 @@
 import { Preloader } from '@engine/resources'
 import { ApplicationRender, CreateSprite, CreateMovieClip } from '@engine/core'
-import { TextureCache, Graphics } from '@engine/adapter'
+import { Graphics, Container } from '@engine/adapter'
 import { hitCircleRect } from '@engine/collision'
 
 let count = 0
@@ -18,21 +18,36 @@ export function init() {
   })
 
   app.resize()
+  app.stage.sortableChildren = true
 
   Preloader([
     ['car1', '//yun.tuisnake.com/h5-mami/worldTrip/1.0/gamearea/people/car1.png', loadCount],
     ['car2', '//yun.tuisnake.com/h5-mami/worldTrip/1.0/gamearea/people/car2.png', loadCount],
     ['fire', '//yun.tuisnake.com/h5-mami/worldTrip/1.0/building/blue_fireworks.png', loadCount]
   ]).then(() => {
+    const container = new Container()
+    container.position.set(300, 350)
+    // 设置容器内部子元素进行zIndex重排
+    container.sortableChildren = true
+    container.zIndex = 2
+
     const sprite1 = CreateSprite('car1')
-    const nextTexture = TextureCache['car2']
-    sprite1.texture = nextTexture
-    sprite1.position.set(100, 100)
+    sprite1.zIndex = 10
+
+    const sprite2 = CreateSprite('car2')
+    sprite2.zIndex = 9
+
+    container.addChild(sprite1)
+    container.addChild(sprite2)
+
+    // 设置旋转中心点
+    container.pivot.x = container.width / 2
+    container.pivot.y = container.height / 2
 
     // 绘制一个矩形用做精灵的边框
-    let rectangle = new Graphics()
-    rectangle.lineStyle(4, 0xFF3300, 1);
-    rectangle.drawRect(sprite1.x, sprite1.y, sprite1.width, sprite1.height)
+    // let rectangle = new Graphics()
+    // rectangle.lineStyle(4, 0xFF3300, 1);
+    // rectangle.drawRect(sprite1.x, sprite1.y, sprite1.width, sprite1.height)
 
     // 创建帧动画播放器
     const animateSprite = new CreateMovieClip({
@@ -47,6 +62,7 @@ export function init() {
       }
     })
     animateSprite.position.set(200, 200)
+    animateSprite.zIndex = 1
     animateSprite.play()
 
     let circle = new Graphics()
@@ -59,9 +75,12 @@ export function init() {
     const isHit = hitCircleRect({ width: 64, center: { x: 80, y: 130 } }, sprite1)
     console.log(`圆形和矩形精灵是否发生碰撞: ${isHit ? '是' : '否'}`)
 
-    app.stage.addChild(sprite1)
+    app.stage.addChild(container)
     app.stage.addChild(animateSprite)
-    app.stage.addChild(rectangle)
+
+    app.ticker.add((delta) => {
+      container.rotation -= 0.1 * delta
+    })
   }).catch(() => {
     console.error('预加载失败, 请检查原因')
   })

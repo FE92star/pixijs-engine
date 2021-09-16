@@ -6,7 +6,8 @@
  * @return {Boolean} 是否发生碰撞
  */
 
-import { circleOption, pointDistance } from './hitCircle'
+import { pointDistance } from './hitCircle'
+import type { circleOption } from './hitCircle'
 
 export default function (r: circleOption, s: any): boolean {
   const center = r.center

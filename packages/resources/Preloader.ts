@@ -6,10 +6,10 @@
 
 import { Loader } from '../adapter'
 
-export default function (resource: Array<any[]>) {
+export default function (resource: Array<any[]>): Promise<unknown> {
   if (!isArray(resource)) {
     console.error(`请传入一个资源列表`)
-    return Promise.reject()
+    return
   }
   let loaderArr = []
   const nameMapArr = []
@@ -30,11 +30,12 @@ export default function (resource: Array<any[]>) {
   // 校验资源名称不能重复，否则对应纹理会被覆盖
   if (containsDuplicate(nameMapArr)) {
     console.error(`资源名称不能重复`)
-    return Promise.reject()
+    return
   }
-  return new Promise(resolve => {
+  return new Promise((resolve, reject) => {
     Loader.add(loaderArr)
       .load(resolve)
+    Loader.onError.add(reject)
   })
 }
 
