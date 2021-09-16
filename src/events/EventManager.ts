@@ -53,7 +53,7 @@
    public static ALL_CANCEL: string = 'touchendoutside+mouseupoutside'
  
    /**
-    * 事件监听-静态方法，不需要实力化调用，直接通过类来调用
+    * 事件监听-静态方法，不需要实例化调用，直接通过类来调用
     * @param {String} name-事件名称
     * @param {Function} fn-事件触发回调
     * @param {Object} context-上下文对象

@@ -15,12 +15,8 @@ export function init() {
     transparent: true
   })
 
-  // 用于hack移动端真机上地图不能滚动的bug
-  app.renderer.plugins.interaction.autoPreventDefault = false
-  app.renderer.view.style.touchAction = 'auto'
-
   app.resize()
-  app.stage.sortableChildren = true
+  // app.stage.sortableChildren = true
 
   Preloader([
     ['car1', '//yun.tuisnake.com/h5-mami/worldTrip/1.0/gamearea/people/car1.png', loadCount],
@@ -69,7 +65,7 @@ export function init() {
 
     let circle = new PIXI.Graphics()
     circle.beginFill(0x9966FF)
-    circle.drawCircle(80, 1000, 32)
+    circle.drawCircle(80, 130, 32)
     circle.endFill()
 
     // circle添加点击事件
@@ -77,8 +73,8 @@ export function init() {
     // circle.on('tap', () => {
     //   console.log('圆形被点击了')
     // })
-    circle.on(EventManager.ALL_CLICK, () => {
-      alert('圆形被点击了')
+    circle.on(EventManager.ALL_CLICK, (e) => {
+      alert(`事件类型：${e.type}`)
     })
 
     app.stage.addChild(circle)

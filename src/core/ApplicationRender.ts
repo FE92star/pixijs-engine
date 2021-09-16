@@ -88,5 +88,11 @@ export default class extends Application {
     Object.defineProperty(PIXI.DisplayObject.prototype, 'realScreen', {
       value: this.realScreen
     })
+
+    // hack移动端真机上地图不能滚动的bug
+    this.renderer.plugins.interaction.autoPreventDefault = false
+    this.renderer.view.style.touchAction = 'auto'
+    // 默认开启舞台自动根据子元素的层级进行排序
+    this.stage.sortableChildren = true
   }
 }

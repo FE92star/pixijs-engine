@@ -16,7 +16,7 @@ function patchedOn<T extends PIXI.DisplayObject>(
   event: string,
   fn: Function
 ): T {
-  // 针对合成事件单独处理
+  // 针对联合事件单独处理
   switch (event) {
     case EventManager.ALL_CLICK:
       on.call(this, EventManager.TOUCH_CLICK, fn)
@@ -44,7 +44,7 @@ function patchedOn<T extends PIXI.DisplayObject>(
   event: string,
   fn: Function
 ): T {
-  // 针对合成事件单独处理
+  // 针对联合事件单独处理
   switch (event) {
     case EventManager.ALL_CLICK:
       off.call(this, EventManager.TOUCH_CLICK, fn)
@@ -65,6 +65,6 @@ function patchedOn<T extends PIXI.DisplayObject>(
   return off.apply(this, arguments)
 }
 
-// 重新赋值
+// 重新反向赋值
 PIXI.Container.prototype.on = patchedOn
 PIXI.Container.prototype.off = patchedOff
