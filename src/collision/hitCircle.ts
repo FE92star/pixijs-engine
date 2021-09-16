@@ -6,6 +6,7 @@
  * @return {Boolean} 是否发生碰撞
  */
 
+import { pointDistance } from '../utils'
 export interface circleOption {
   /** 圆的直径 */
   width: number
@@ -27,8 +28,4 @@ export default function (r1: circleOption, r2: circleOption): boolean {
   // 比较半径之和与圆心距离
   const hit = distance > (radius1 + radius2) ? false : true
   return hit
-}
-
-export function pointDistance (p1: any, p2: any) {
-  return Math.sqrt(Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2))
 }

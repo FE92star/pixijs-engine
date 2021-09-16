@@ -5,6 +5,7 @@
  */
 
 import { Loader } from '../adapter'
+import { isArray, containsDuplicate } from '../utils'
 
 export default function (resource: Array<any[]>): Promise<unknown> {
   if (!isArray(resource)) {
@@ -37,30 +38,4 @@ export default function (resource: Array<any[]>): Promise<unknown> {
       .load(resolve)
     Loader.onError.add(reject)
   })
-}
-
-/**
- * 数组是否包含重复元素
- */
-function containsDuplicate (nums: Array<any>) {
-  let hash = new Map
-  for (let i of nums) {
-    if (hash.has(i)) {
-      hash.set(i, hash.get(i) + 1)
-    } else {
-      hash.set(i, 1)
-    }
-  }
-  for (let i of hash.values()) {
-    if (i > 1)
-      return true
-  }
-  return false
-}
-
-/**
- * 是否是数组
- */
-function isArray (args: any) {
-  return Object.prototype.toString.call(args).indexOf('Array') > -1
 }

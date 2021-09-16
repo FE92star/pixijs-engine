@@ -25,8 +25,5 @@ export const Container = pixi.Container
 export const Text = pixi.Text
 /** 动画精灵对象 */
 export const AnimatedSprite = pixi.AnimatedSprite
-export const SimpleRope = pixi.SimpleRope
 /** 点对象 */
 export const Point = pixi.Point
-
-export const Resource = pixi.Resource
