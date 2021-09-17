@@ -16,6 +16,11 @@ export function init() {
   })
 
   app.resize()
+
+  // 初始化事件监听器
+  EventManager.on('circle', (data: unknown) => {
+    console.log(data)
+  })
   // app.stage.sortableChildren = true
 
   Preloader([
@@ -74,7 +79,8 @@ export function init() {
     //   console.log('圆形被点击了')
     // })
     circle.on(EventManager.ALL_CLICK, (e) => {
-      alert(`事件类型：${e.type}`)
+      // 触发事件
+      EventManager.emit('circle', e.type)
     })
 
     app.stage.addChild(circle)
