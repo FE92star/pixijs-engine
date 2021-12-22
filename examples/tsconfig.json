@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "../",
+    "target": "es6",
+    "paths": {
+      "@engine": [
+        "./src"
+      ]
+    }
+  },
+  "include": [
+    "./"
+  ]
+}
