@@ -67,4 +67,5 @@ function patchedOn<T extends PIXI.DisplayObject>(
 
 // 重新反向赋值
 PIXI.Container.prototype.on = patchedOn
+// @ts-ignore
 PIXI.Container.prototype.off = patchedOff

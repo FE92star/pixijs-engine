@@ -5,34 +5,37 @@
  */
 
 import { Loader } from '../adapter'
-import { isArray, containsDuplicate } from '../utils'
+import { isArray, containsDuplicate, EmptyFn } from '../utils'
+
+interface LoaderItemType {
+  name: string
+  url: string
+  onComplete: EmptyFn
+}
 
 export default function (resource: Array<any[]>): Promise<unknown> {
   if (!isArray(resource)) {
-    console.error(`请传入一个资源列表`)
-    return
+    return Promise.reject('请传入一个资源列表')
   }
-  let loaderArr = []
-  const nameMapArr = []
-  if (isArray(resource[0])) {
-    resource.forEach(item => {
-      nameMapArr.push(item[0])
-      const onComplete = item[2] ? item[2] : null
-      const loaderItem = {
-        name: item[0], // 资源的别名
-        url: item[1], // 资源的地址
-        onComplete // 资源完成加载时要调用的函数
-      }
-      loaderArr.push(loaderItem)
-    })
-  } else {
-    loaderArr = resource
-  }
+
+  let loaderArr: LoaderItemType[] = []
+  const nameMapArr: any[] = []
+  // 处理资源
+  resource.forEach(item => {
+    nameMapArr.push(item[0])
+    const onComplete = item[2] ? item[2] : null
+    const loaderItem: LoaderItemType = {
+      name: item[0], // 资源的别名
+      url: item[1], // 资源的地址
+      onComplete // 资源完成加载时要调用的函数
+    }
+    loaderArr.push(loaderItem)
+  })
   // 校验资源名称不能重复，否则对应纹理会被覆盖
   if (containsDuplicate(nameMapArr)) {
-    console.error(`资源名称不能重复`)
-    return
+    return Promise.reject('资源名称不能重复')
   }
+
   return new Promise((resolve, reject) => {
     Loader.add(loaderArr)
       .load(resolve)

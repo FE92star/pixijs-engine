@@ -55,16 +55,18 @@ export default class extends Application {
     let offserHeight = winHeight
     
     // 以屏幕宽度比为基准,对高度进行缩放
-    const scaleRatio = offsetWidth / width
-    this.renderer.resize(winWidth / scaleRatio, height) // 更改画布的大小适配屏幕宽高比
+    const scaleRatio = width ? offsetWidth / width : 1
+    height && this.renderer.resize(winWidth / scaleRatio, height) // 更改画布的大小适配屏幕宽高比
 
     // 宽高比
     const aspectRatio = offserHeight / offsetWidth
-    const newWidth = width * scaleRatio
+    const newWidth = width ? width * scaleRatio : 750
 
     // 设置canvas应用容器的缩放属性
-    this.options.view.style.transformOrigin = 'top left'
-    this.options.view.style.transform = `scale(${scaleRatio})`
+    if (this.options.view) {
+      this.options.view.style.transformOrigin = 'top left'
+      this.options.view.style.transform = `scale(${scaleRatio})`
+    }
 
     // 监测横竖屏，设置根容器的旋转角度和纵向偏移
     if (window.orientation === 90 || window.orientation === -90) {

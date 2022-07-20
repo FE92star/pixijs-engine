@@ -1,3 +1,5 @@
+export * from './types'
+
 /**
  * 是否是数组
  */

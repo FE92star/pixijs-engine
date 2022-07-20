@@ -10,8 +10,7 @@
  */
 
 import { AnimatedSprite, TextureCache, Rectangle, Texture } from '../adapter'
-
-type voidFn = () => void
+import { InstanceType, EmptyFn } from '../utils'
 
 interface animateParams {
   /** 帧动画资源的纹理名称 */
@@ -27,7 +26,7 @@ interface animateParams {
   /** 动画是否循环播放 */
   loop?: boolean
   /** 动画播放结束回调(loop为false才会触发) */
-  onComplete?: voidFn
+  onComplete?: EmptyFn
 }
 
 export default class extends AnimatedSprite {
@@ -36,7 +35,7 @@ export default class extends AnimatedSprite {
     const texture = TextureCache[name]
     const width = Math.floor(texture.width / columns)
     const height = Math.floor(texture.height / rows)
-    const framesList = []
+    const framesList: InstanceType<typeof Texture>[] = []
     // 遍历帧动画图片源创建一个动画纹理数组
     for (let i = 0; i < rows; i++) {
       for (let j = 0; j < columns; j++) {
