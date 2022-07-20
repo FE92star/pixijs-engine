@@ -2,7 +2,7 @@
   "name": "pixijs-engine",
   "version": "0.0.1",
   "description": "基于Pixi封装的游戏引擎",
-  "main": "lib/main.js",
+  "main": "lib/index.js",
   "keywords": [
     "pixijs",
     "engine"
