@@ -12,7 +12,8 @@
   ],
   "scripts": {
     "start": "vite ./examples -c ./examples/vite.config.ts",
-    "git-push": "git push -u github master"
+    "git-push": "git push -u github master",
+    "build": "tsc"
   },
   "author": {
     "name": "Bob",
