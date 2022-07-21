@@ -17,7 +17,11 @@ export default function (
   // 设置精灵纹理对象的缩放比例
   sprite.texture.baseTexture.scaleMode = 1
   // 判断纹理缓存对象中是否包含对应名称的纹理
-  if (sprite.width === 1) console.error(`请确保加载正确的纹理名称: ${name}`)
+  if (sprite.width === 1) {
+    console.error(`请确保加载正确的纹理名称: ${name}`)
+    return
+  }
+
   // 设置属性
   sprite.width = width || sprite.width
   sprite.height = height || sprite.height

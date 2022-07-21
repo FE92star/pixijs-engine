@@ -5,7 +5,7 @@
  */
 
 import { Loader } from '../adapter'
-import { isArray, containsDuplicate, EmptyFn } from '../utils'
+import { containsDuplicate, EmptyFn } from '../utils'
 
 interface LoaderItemType {
   name: string
@@ -14,8 +14,8 @@ interface LoaderItemType {
 }
 
 export default function (resource: Array<any[]>): Promise<unknown> {
-  if (!isArray(resource)) {
-    return Promise.reject('请传入一个资源列表')
+  if (!resource.length) {
+    return Promise.reject('请至少传入一个资源列表')
   }
 
   let loaderArr: LoaderItemType[] = []
@@ -31,6 +31,7 @@ export default function (resource: Array<any[]>): Promise<unknown> {
     }
     loaderArr.push(loaderItem)
   })
+
   // 校验资源名称不能重复，否则对应纹理会被覆盖
   if (containsDuplicate(nameMapArr)) {
     return Promise.reject('资源名称不能重复')
